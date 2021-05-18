@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package java.Views;
+package sad_saple;
 
 import java.awt.Color;
 
@@ -30,20 +30,20 @@ public class HomePage extends javax.swing.JFrame {
         initComponents();
         this.AccName = AccName;
         this.role = role;
-        
-        afterLogin(AccName,role);
+
+        afterLogin(AccName, role);
         this.setLocationRelativeTo(null);
     }
-private void beforeLogin(){
-logOut.setVisible(false);
-}
-    
-    private void afterLogin(String AccName,String role) {
+
+    private void beforeLogin() {
+        logOut.setVisible(false);
+    }
+
+    private void afterLogin(String AccName, String role) {
         Hello.setText("Hello " + AccName);
         Login.setVisible(false);
         if (role.equals("Doctor")) {
             itemFrame.setForeground(Color.WHITE);
-            
             orderFrame.setForeground(Color.WHITE);
         } else if (role.equals("Patient")) {
             itemFrame.setForeground(Color.WHITE);
@@ -133,7 +133,7 @@ logOut.setVisible(false);
                                     .addComponent(UserOrder, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                     .addComponent(itemFrame, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                     .addComponent(TopicDisease, javax.swing.GroupLayout.DEFAULT_SIZE, 144, Short.MAX_VALUE))
-                                .addGap(0, 241, Short.MAX_VALUE))
+                                .addGap(0, 296, Short.MAX_VALUE))
                             .addGroup(layout.createSequentialGroup()
                                 .addComponent(orderFrame, javax.swing.GroupLayout.PREFERRED_SIZE, 144, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -162,8 +162,7 @@ logOut.setVisible(false);
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jButton2)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(Login)))
+                    .addComponent(Login))
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addGap(18, 18, 18)
@@ -190,9 +189,9 @@ logOut.setVisible(false);
     }//GEN-LAST:event_LoginActionPerformed
 
     private void UserOrderActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_UserOrderActionPerformed
-      
-            UserOrder u = new UserOrder();
-            u.setVisible(true);
+
+        UserOrder u = new UserOrder();
+        u.setVisible(true);
 
     }//GEN-LAST:event_UserOrderActionPerformed
 

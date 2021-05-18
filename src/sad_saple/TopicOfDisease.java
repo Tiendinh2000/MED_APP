@@ -3,10 +3,10 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package java.Views;
+package sad_saple;
 
-import java.Controller.DiseaseManage;
-import java.Model.Disease;
+import sad_saple.Model.Disease;
+import sad_saple.Controller.DiseaseManage;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Vector;

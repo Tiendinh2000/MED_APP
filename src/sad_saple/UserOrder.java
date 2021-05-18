@@ -3,12 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package java.Views;
+package sad_saple;
 
-import java.Controller.OrderManage;
-import java.Controller.ItemManage;
-import java.Model.Order;
-import java.Model.Item;
+import sad_saple.Model.Order;
+import sad_saple.Model.Item;
+import sad_saple.Controller.OrderManage;
+import sad_saple.Controller.ItemManage;
 import java.awt.Color;
 import java.awt.Image;
 import java.awt.image.BufferedImage;

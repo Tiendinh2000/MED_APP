@@ -3,19 +3,19 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package java.Controller;
+package sad_saple.Controller;
 
 /**
  *
  * @author nobody
  */
-import java.Model.Item;
 import java.util.*;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import sad_saple.Model.Item;
 
 public class ItemManage {
 
